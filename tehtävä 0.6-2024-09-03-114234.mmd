@@ -1,0 +1,6 @@
+sequenceDiagram
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+    server-->>browser: HTML document
+    Note right of browser: käyttäjä tekee uuden muistiinpanon ja painaa "tallenna"
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+    browser-->>browser: new note (heii)
