@@ -1,0 +1,8 @@
+sequenceDiagram
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    server-->>browser: HTML document
+    note right of browser: käyttäjä kirjoitta uuden muistiinpanon ja painaa "tallenna"
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    server-->>browser: new note (moii)
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    server-->>browser: [{content: "moii", date: "2024-09-03T10:50:30.394Z"}]
